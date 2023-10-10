@@ -2,12 +2,12 @@
 
 /* intro */
 
-/* .main__intro{
+.main__intro{
     width: 100%;
     height: 100vh;
     background: url("../img/intro/intro4.jpg") center no-repeat;
     background-size: cover;
-} */
+} 
 .main__intro{
 }
 .intro{

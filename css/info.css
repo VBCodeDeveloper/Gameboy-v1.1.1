@@ -1,0 +1,39 @@
+.main__info h3{
+    font-family: 'Gilroy';
+    color: #333;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 0 10px 0;
+}
+.main__info p{
+    font-family: 'Gilroy';
+    color: #333;
+    font-size: 17px;
+    margin: 0 0 5px 0;
+}
+.main__info p:nth-child(2){
+    margin: 40px 0 0 0;
+}
+.links{
+    width: 100%;
+    height: auto;
+    background-color: #333;
+    padding: 10px;
+    margin: 40px 0;
+}
+.links p, a{
+    color: #fff;
+}
+.links a{
+    transition: color .1s linear;
+}
+.main__info p:nth-child(5){
+    margin: 40px 0 0 0;
+}
+
+.main__info a:hover{
+    color: #fef200;
+}
+.main__info p:last-child{
+    margin: 40px 0 0 0;
+}

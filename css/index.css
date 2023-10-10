@@ -1,0 +1,225 @@
+/* main */
+
+/* intro */
+
+/* .main__intro{
+    width: 100%;
+    height: 100vh;
+    background: url("../img/intro/intro4.jpg") center no-repeat;
+    background-size: cover;
+} */
+.main__intro{
+}
+.intro{
+}
+.video{ 
+    position: relative;
+}
+.video video{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+}
+.main__intro_alfa{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 65%);
+}
+.main__info_item{
+    position: relative;
+    z-index: 3;
+}
+.main__intro_info{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    font-size: 72px;
+    color: #fff;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.main__intro_line{
+    width: 160px;
+    height: 5px;
+    background-color: #fff;
+    margin: 70px auto 78px auto;
+}
+
+.main__intro_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main__intro_button button{
+    width: 350px;
+    height: 80px;
+    background-color: #dbd000;
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Gilroy';
+    font-weight: 600;
+    transition: all .2s linear;
+}
+.main__intro_button button:hover{
+    background-color: #c8be00;
+    /* width: 340px;
+    height: 70px;
+    font-size: 31px; */
+}
+
+/* info */
+.main__info{
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    background-color: #e9e9e9;
+    padding: 130px 0;
+}
+.main__info p{
+    font-family: 'Gilroy';
+    font-size: 18px;
+    color: #2a2a2a;
+    text-align: center;
+}
+
+.info1{
+    min-height: 330px;
+}
+
+.info2{
+    min-height: 330px;
+    margin: 10px 0;
+}
+
+.info3{
+    text-align: center;
+    min-height: 100px;
+}
+
+/* cards */
+.cards{
+    display: flex;
+    justify-content: space-between;
+
+
+    margin: 100px 0;
+    /* padding: 0px 50px; */
+}
+.cards__items{
+    position: relative;
+    max-width: 350px;
+    /* height: 400px; */
+    height: auto;
+
+    background-color: #333;
+}
+.cards__items_i{
+    width: 350px;
+    height: 350px;
+}
+.left{
+    background: url('../img/menu/gaming.jpg') 0 0/cover no-repeat;
+}
+.midd{
+    background: url('../img/menu/types.jpg') 50% 0/cover no-repeat;
+}
+.right{
+    background: url('../img/intro/intro3.jpg') 50% 0/cover no-repeat;
+}
+.cards__item_dark{
+    width: 350px;
+    height: 350px;
+    background-color: rgba(4, 5, 1, 40%);
+}
+.cards__item_link{
+    text-align: center;
+    padding: 45% 0;
+}
+.cards__item_link p{
+    font-family: 'Gilroy';
+    color: #fff;
+    font-weight: 500;
+    font-size: 36px;
+    transition: opacity .1s linear;
+}
+.cards__items:hover .cards__items_img{
+    max-width: 350px;
+    /* max-height: 400px; */
+    transform: translate3d( 0px, -20px, 0px);
+}
+.cards__items:hover .cards__item_link p{
+    opacity: 0;
+} 
+.cards__items_ico::before{
+    content: '';
+    position: absolute;
+    top: 45%;
+    left: 43%;
+    width: 50px;
+    height: 50px;
+    z-index: 6;
+    opacity: 0;
+    background: url('../img/icons/controller/controller.png') 0 0/cover no-repeat;
+    transition: all .1s linear;
+}
+.cards__items:hover .cards__items_ico::before{
+    content: '';
+    position: absolute;
+    top: 37%;
+    left: 43%;
+    width: 50px;
+    height: 50px;
+    z-index: 6;
+    opacity: 1;
+}
+.cards__items:hover .cards__items_img .cards__items_i{
+    opacity: .1;
+}
+.cards__items_img{
+    background: linear-gradient(to bottom, #dbd000, #F8DF91);
+
+    transition: transform .2s linear;
+}
+.cards__items_img .cards__items_i{
+    display: block;
+    transition: opacity .1s linear, position 10s linear;
+}
+
+/* intro */
+.main__slider{
+    margin: 100px 0;
+}
+
+@media(max-width: 1279px){
+    .cards{
+        display: block;
+    }
+    .cards__items{
+        margin: 10px auto;   
+    }
+    .main__intro{
+    width: 100%;
+    height: 100vh;
+    background: url("../img/intro/intro4.jpg") center no-repeat;
+    background-size: cover;
+    }
+    .video video{
+        display: none;
+    }
+    .main__intro_info{
+        font-size: 38px;
+    }
+    .main__intro_button button{
+        width: 300px;
+        height: 80px;
+        font-size: 30px;
+    }
+}

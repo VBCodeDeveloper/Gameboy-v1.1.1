@@ -1,0 +1,125 @@
+.new__cards_items{
+    margin: 80px 0;
+}
+.new__cards{
+    margin: 40px 0 0 0;
+}
+.new__cards_items{
+    display: flex;
+    justify-content: space-between;
+}
+
+.item__card{
+    position: relative;
+    flex: 1 1 33.333%;
+    min-height: 100px;
+    background-color: #333;
+    padding: 30px 20px;
+    transition: transform .2s linear;
+}
+.card_midd{
+    margin: 0 5%;
+}
+.item__card:hover{
+    transform: translate3d(0, -10px, 0);
+}
+.item__card:hover .new__card_info h3{
+    color: #fef200;
+}
+.item__link a{
+    color: #fff;
+}
+.new__card{
+    position: relative;
+}
+.new__card_img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+}
+.game1{
+    background: url('../img/news/new.jpg') 50% 0/cover no-repeat;
+}
+.game2{
+    background: url('../img/news/class.jpg') 50% 0/170% no-repeat;
+}
+.cyberpunk__n{
+    background: url('../img/news/mario.jpg') 50% 0/cover no-repeat;
+}
+.spider__n{
+    background: url('../img/news/spider.jpg') 50% 0/cover no-repeat;
+}
+.watch__n{
+    background: url('../img/intro/intro9.jpg') 50% 0/cover no-repeat;
+}
+.last__n{
+    background: url('../img/news/last.jpg') 50% 0/cover no-repeat;
+}
+.detroit__n{
+    background: url('../img/news/detroit.jpg') 50% 0/cover no-repeat;
+}
+.god__n{
+    background: url('../img/games/godofwar/god2.jpg') 50% 0/cover no-repeat;
+}
+.bd__n{
+    background: url('../img/news/border.jpg') 50% 0/cover no-repeat;
+}
+
+.new__card_info{
+    padding: 220px 5px 0 5px;
+    font-family: 'Gilroy';
+    position: relative;
+}
+.new__card_info h3{
+    position: relative;
+    font-size: 30px;
+    font-weight: 500;
+    transition: color .2s linear;
+    font-family: 'Noto Sans', sans-serif;
+}
+.new__card_info h3::before{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #7a7a7a;
+}
+.new__card_info p{
+    margin: 20px 0 0 0;
+}
+.new__card_info p:last-child{
+    margin: 0 0 20px 0;
+}
+.item__card h5{
+    position: absolute;
+    bottom: 15px;
+    right: 30px;
+    color: #a8a8a8;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 500;
+}
+@media(max-width: 920px){
+    .new__cards_items{
+        display: block;
+    }
+    .item__card{
+        margin: 50px 0;
+        min-height: 700px;
+    }
+    .card_midd{
+        margin: 0 0;
+    }
+    .new__card_img{
+        height: 400px;
+    }
+    .card_midd{
+        margin: 0 0;
+    }
+    .new__card_info{
+        padding: 420px 5px 0 5px;
+    }
+}

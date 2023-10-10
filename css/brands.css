@@ -1,0 +1,50 @@
+
+
+
+.cards{
+    margin: 80px 0 0 0;
+}
+.cards__attachment{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 100px 0;
+}
+.cards__items{
+    width: 300px;
+    height: 200px;
+}
+.steam{
+    background: url('../img/brands/steam.png') 50% 50%/60% no-repeat;
+}
+.ps{
+    background: url('../img/brands/ps.png') 50% 50%/60% no-repeat;
+}
+.reddit{
+    background: url('../img/brands/reddit.png') 50% 50%/60% no-repeat;
+}
+.xb{
+    background: url('../img/brands/xb.png') 50% 50%/60% no-repeat;
+}
+.tw{
+    background: url('../img/brands/tw.png') 50% 50%/60% no-repeat;
+}
+.pg{
+    background: url('../img/brands/pg.png') 50% 50%/60% no-repeat;
+}
+.gm{
+    background: url('../img/brands/gm.png') 50% 50%/60% no-repeat;
+}
+.sg{
+    background: url('../img/brands/sg.png') 50% 50%/60% no-repeat;
+}
+
+@media(max-width: 620px){
+    .cards__attachment{
+        display: block;
+        margin: 0 0;
+    }
+    .cards__items{
+        margin: 50px auto;
+    }
+}

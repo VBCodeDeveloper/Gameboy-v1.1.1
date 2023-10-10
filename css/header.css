@@ -1,0 +1,145 @@
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    min-height: 45px;
+    background-color: rgba(51, 51, 51, 90%);
+    transition: top 0.4s;
+}
+.fixed-header header {
+	top: -50px;
+}
+.fixed-header .show {
+	top: 0;
+}
+
+.header__items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5% 5px;
+}
+
+.header__logo{
+    max-width: 100%;
+    margin: 7px 0 0 0;
+    gap: 0 10px 0 0;
+}
+.header__logo img{
+    width: 130px;
+}
+
+.header__links ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 0 50px;
+    margin: 0 0 0 0;
+}
+.header__links li{
+    margin: 2px 0;
+}
+.header__links a{
+    font-family: 'Gilroy';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #fff;
+    transition: all .1s linear;
+}
+.header__links a:hover{
+    color: #fef200;
+    border-bottom: 3px solid #fef200;
+    padding-bottom: 3px;
+}
+.header__links a:active{
+    color: #e3d700;
+    border-bottom: 3px solid #e3d700;
+}
+
+.burger{
+    display: none;
+}
+
+@media (max-width: 767px){
+    body.lock{
+        overflow: hidden;
+    }
+    .header{
+
+    }
+    .burger{
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        z-index: 3;
+    }
+    .burger span{
+        position: absolute;
+        background-color: #fff;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+        transition: all .3s ease 0s;
+    }
+    .burger::before,
+    .burger::after{
+        content: '';
+        background-color: #fff;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        transition: all .3s ease 0s;
+    }
+    .burger::before{
+        top: 0;
+    }
+    .burger::after{
+        bottom: 0;
+    }
+
+    .burger.active span{
+        transform: scale(0);
+    }
+    .burger.active::before{
+        transform: rotate(45deg);
+        top: 9px;
+    }
+    .burger.active::after{
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+
+    .header__links{
+        position: fixed;
+        z-index: -1;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(51, 51, 51, 90%);
+        padding: 100px 10px 20px 10px;
+        transition: all .3s ease 0s;
+    }
+    .header__links.active{
+        top: 0;
+    }
+
+    .header__links ul{
+        display: block;
+        text-align: center;
+    }
+    .header__links li{
+        margin: 0 0 80px 0;
+        
+    }
+    .header__links a{
+        font-size: 30px;
+        font-weight: 600;
+    }
+}

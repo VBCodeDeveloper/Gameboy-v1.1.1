@@ -1,0 +1,358 @@
+.back__link a{
+    font-family: 'Gilroy';
+    color: #ccc;
+    font-size: 20px;
+    font-weight: 500;
+    transition: color .1s linear;
+}
+.back__link a:hover{
+    color: #7a7a7a;
+}
+
+.underline{
+    width: 100%;
+    height: 2px;
+    margin: 40px 0 30px 0;
+    background-color: #7a7a7a;
+}
+
+/* card */
+.main__items{
+    display: flex;
+    justify-content: space-between;
+
+    font-family: 'Gilroy';
+    color: #333;
+}
+
+.main__card{
+    flex: 1 1 auto;
+    margin: 0 50px 0 0;
+    min-height: 350px;
+}
+
+.main__card_name h2{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+}
+
+.main__card_intro{
+    width: 100%;
+    height: 400px;
+    background: #333;
+}
+
+.main__card_intro_d{
+    width: 100%;
+    height: 400px;
+    background-color:rgba(4, 5, 1, 5%);
+}
+
+.main__card_info p{
+    font-weight: 500;
+    margin: 40px 0 30px 0;
+}
+
+.main__card_list{
+    margin: 0 0 50px 0;
+}
+.main__card_list li:nth-child(2), li:nth-child(3), li:nth-child(4), li:nth-child(5){
+    padding: 0 0 0 3px;
+}
+
+.list__item{
+    display: flex;
+    justify-content: start;
+}
+.list__item ul:first-child{
+    margin: 0 300px 0 0;
+}
+.list__item ul{
+    position: relative;
+    padding: 0 0 0 10px;
+}
+.list__item ul::before{
+    content: '';
+    width: 2px;
+    height: 50px;
+    background-color: #7a7a7a;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.list__item li:first-child{
+    color: #272727;
+}
+
+.main__cards_about{
+    margin: 0 0 30px 0;
+}
+
+
+
+
+.main__about_title{
+    margin: 0 0 3px 0;
+}
+.main__about_title h3{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.main__specific_title{
+    margin: 0 0 20px 0;
+}
+.main__specific_title p{
+    font-size: 17px;
+    font-weight: 500;
+}
+.main__specific_card{
+    width: 100%;
+    min-height: auto;
+    background-color: #333;
+    color: #fff;
+    padding: 40px 30px 20px 30px;
+}
+.specific__card_os{
+    position: relative;
+    margin: 0 0 30px 0;
+}
+.specific__card_os p{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 500;
+}
+.specific__card_os::after{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #7a7a7a;
+}
+.specific__card_flex{
+    display: flex;
+    justify-content: space-between;
+}
+.left{
+    margin: 0 50px 0 0;
+}
+.specific__card ul:first-child{
+    color: #7a7a7a;
+    font-weight: 600;
+    margin: 0 0 30px 0;
+}
+.specific__card ul{
+    font-family: 'Gilroy';
+    margin: 20px 0 20px 0;
+}
+.specific__card li:first-child{
+    font-weight: 600;
+    color: #7a7a7a;
+    font-weight: 500;
+}
+.specific__card{
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.card_info{
+    margin: 85px 0 0 0;
+    flex: 0 0 auto;
+    width: 30%;
+    height: 200px;
+    /* background-color: #333; */
+}
+.card__intro{
+    width: 100%;
+    height: 200px;
+}
+
+
+.cuberpunk_logo{
+    background: url('../img/games/cyberpunk/cyberpunk.png') 50% 50%/80% no-repeat;
+}
+.witche_logo{
+    background: url('../img/games/witcher/witcher.png') 50% 50%/80% no-repeat;
+}
+.forza5_logo{
+    background: url('../img/games/forzahorizon/f5.png') 50% 50%/55% no-repeat;
+}
+.forza4_logo{
+    background: url('../img/games/forzahorizon/f4.png') 50% 50%/80% no-repeat;
+}
+.jedi_logo{
+    background: url('../img/games/starwars/jedi.png') 50% 50%/60% no-repeat;
+}
+.sims4_logo{
+    background: url('../img/games/sims4/sims4.png') 50% 50%/70% no-repeat;
+}
+.last_logo{
+    background: url('../img/games/lastofus/lofus.png') 50% 50%/80% no-repeat;
+}
+.mk_logo{
+    background: url('../img/games/mortalkombat/mk11.png') 50% 50%/80% no-repeat;
+}
+.ghost_logo{
+    background: url('../img/games/ghostoftsushima/gofth.png') 50% 50%/80% no-repeat;
+}
+.hearth_logo{
+    background: url('../img/games/hearthstone/hearth.png') 50% 50%/80% no-repeat;
+}
+.genshin_logo{
+    background: url('../img/games/genshin/Genshin_Impact.png') 50% 50%/80% no-repeat;
+}
+.fire_logo{
+    background: url('../img/games/freefire/Freef.png') 50% 50%/80% no-repeat;
+}
+.clash_logo{
+    background: url('../img/games/clashroyal/Clash_Royale.png') 50% 50%/80% no-repeat;
+}
+.brawl_logo{
+    background: url('../img/games/brawlstars/bs.png') 50% 50%/60% no-repeat;
+}
+.among_logo{
+    background: url('../img/games/amongus/among-us.png') 50% 50%/80% no-repeat;
+}
+.sea_logo{
+    background: url('../img/games/seaofthieves/seaofth.png') 50% 50%/80% no-repeat;
+}
+.pubg_logo{
+    background: url('../img/games/pubg/pubg.png') 50% 50%/60% no-repeat;
+}
+.fort_logo{
+    background: url('../img/games/fortnite/fort.png') 50% 50%/80% no-repeat;
+}
+.dota_logo{
+    background: url('../img/games/dota2/Dota-2.png') 50% 50%/50% no-repeat;
+}
+.csgo_logo{
+    background: url('../img/games/csgo/csgo.png') 50% 50%/80% no-repeat;
+}
+.border_logo{
+    background: url('../img/games/borderlands/bl3.png') 50% 50%/80% no-repeat;
+}
+.detroit_logo{
+    background: url('../img/games/detroit/Detroit-become-human.png') 50% 50%/80% no-repeat;
+}
+.god_logo{
+    background: url('../img/games/godofwar/gofw.png') 50% 50%/80% no-repeat;
+}
+.spider_logo{
+    background: url('../img/games/spiderman/spiderman.png') 50% 50%/80% no-repeat;
+}
+
+ul{
+    position: relative;
+}
+ul span{
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    width: 25px;
+    height: 25px;
+}
+.windows{
+    left: 93%;
+    background: url('../img/platforms/windows.png') 50% 50%/90% no-repeat;
+}
+.ps{
+    left: 83%;
+    background: url('../img/platforms/ps.png') 50% 50%/100% no-repeat;
+}
+.ps_spider, .ps_lofus, .ps_ghost{
+    left: 93%;
+}
+
+.xbox{
+    left: 73%;
+    background: url('../img/platforms/xbox.png') 50% 50%/80% no-repeat;
+}
+.x_softh, .x_forza{
+    left: 83%;
+}
+.nint{
+    left: 63%;
+    background: url('../img/platforms/nintendo.png') 50% 50%/80% no-repeat;
+}
+.android{
+    left: 53%;
+    background: url('../img/platforms/android.png') 50% 50%/90% no-repeat;
+}
+.and_brawl, .and_heart, .and_freefire{
+    left: 83%;
+}
+.apple{
+    left: 63%;
+    bottom: 2px;
+    background: url('../img/platforms/apple.png') 50% 50%/70% no-repeat;
+}
+.app_gensh{
+    left: 53%;
+}
+.and_agensh{
+    left: 43%;
+}
+.app_pubg{
+    left: 63%;
+}
+.app_hearth{
+    left: 73%;
+}
+.app_brawl, .app_freefire{
+    left: 93%;
+}
+
+.card__info_item{
+    margin: 20px 0 0 0;
+}
+.card__info_flex ul{
+    display: flex;
+    justify-content: space-between;
+}
+.card__info_list li:first-child{
+    font-weight: 500;
+}
+.card__info_list ul{
+    font-family: 'Gilroy';
+    margin: 20px 0 20px 0;
+    position: relative;
+}
+.card__info_list ul::after{
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #7a7a7a;
+}
+.card__info_list li:first-child{
+    font-weight: 600;
+    color: #7a7a7a;
+    font-weight: 500;
+}
+.card__info_list li:last-child{
+    color: #333;
+    font-weight: 600;
+}
+@media(max-width: 870px){
+    .card_info{
+        display: none;
+    }
+    .specific__card_flex{
+        display: block;
+    }
+    .list__item{
+        display: block;
+    }
+    .list__item ul:last-child{
+        margin: 30px 0 0 0;
+    }
+    .main__card{
+        display: block;
+        width: 100%;
+    }
+}

@@ -1,0 +1,522 @@
+.slidershow{
+  width: 100%;
+  height: 550px;
+  overflow: hidden;
+  position: relative;
+  background-color: #000;
+}
+.slide_item{
+  height: 430px;
+}
+.slide_new{
+  height: 550px;
+}
+
+.navigation{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  z-index: 5;
+}
+.bar{
+  width: 100px;
+  height: 20px;
+  border: 3px solid #fff;
+  margin: 6px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.card_bar{
+  width: 80px;
+  height: 15px;
+}
+.bar:hover{
+  background: #fef200;
+}
+
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+
+.slides{
+  width: 500%;
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+.slides::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 550px;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 10%);
+}
+
+.slide{
+  width: 20%;
+  transition: 0.6s;
+  position: relative;
+}
+.slide__img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 550px;
+  background-color: #333;
+} 
+.img1{
+  background: url('../img/intro/intro10.jpg') 50% 0/cover no-repeat;
+}
+.img2{
+  background: url('../img/intro/intro6.jpg') 50% 0/cover no-repeat;
+}
+.img3{
+  background: url('../img/intro/intro4.jpg') 50% 0/cover no-repeat;
+}
+.img4{
+  background: url('../img/intro/intro8.jpg') 50% 0/cover no-repeat;
+}
+.img5{
+  background: url('../img/games/witcher/witcher2.jpg') 50% 80%/cover no-repeat;
+}
+.img_card1{
+  background-color: #000;
+}
+.img_card2{
+  background-color: #000;
+}
+.img_card3{
+  background-color: #000;
+}
+.img_card4{
+  background-color: #000;
+}
+.img_card5{
+  background-color: #000;
+}
+.img_card_cyberpunk1{
+  background: url('../img/games/cyberpunk/cyberpunk5.jpg') 50% 55%/cover no-repeat;
+}
+.img_card_cyberpunk2{
+  background: url('../img/games/cyberpunk/cyberpunk2.jpg') 50% 50%/cover no-repeat;
+}
+.img_card_cyberpunk3{
+  background: url('../img/games/cyberpunk/cyberpunk3.jpg') 50% 50%/cover no-repeat;
+}
+.img_card_cyberpunk4{
+  background: url('../img/games/cyberpunk/cyberpunk4.jpg') 50% 50%/cover no-repeat;
+}
+.img_card_cyberpunk5{
+  background: url('../img/games/cyberpunk/cyberpunk1.jpg') 50% 50%/cover no-repeat;
+}
+.img_witcher1{
+  background: url('../img/games/witcher/witcher1.jpg') 50% 55%/cover no-repeat;
+}
+.img_witcher2{
+  background: url('../img/games/witcher/witcher2.jpeg') 50% 50%/cover no-repeat;
+}
+.img_witcher3{
+  background: url('../img/games/witcher/witcher3.jpg') 50% 50%/cover no-repeat;
+}
+.img_witcher4{
+  background: url('../img/games/witcher/witcher4.jpg') 50% 50%/cover no-repeat;
+}
+.img_witcher5{
+  background: url('../img/games/witcher/witcher5.png') 50% 50%/cover no-repeat;
+}
+.forza51{
+  background: url('../img/games/forzahorizon/forza51.jpg') 50% 50%/70% no-repeat;
+}
+.forza52{
+  background: url('../img/games/forzahorizon/forza52.jpg') 50% 50%/cover no-repeat;
+}
+.forza53{
+  background: url('../img/games/forzahorizon/forza53.jpeg') 50% 50%/cover no-repeat;
+}
+.forza54{
+  background: url('../img/games/forzahorizon/forza54.jpg') 50% 50%/cover no-repeat;
+}
+.forza55{
+  background: url('../img/games/forzahorizon/forza55.jpg') 50% 50%/cover no-repeat;
+}
+.forza41{
+  background: url('../img/games/forzahorizon/forza41.jpg') 50% 70%/70% no-repeat;
+}
+.forza42{
+  background: url('../img/games/forzahorizon/forza42.jpg') 50% 50%/cover no-repeat;
+}
+.forza43{
+  background: url('../img/games/forzahorizon/forza43.jpeg') 50% 50%/cover no-repeat;
+}
+.forza44{
+  background: url('../img/games/forzahorizon/forza44.jpg') 50% 50%/cover no-repeat;
+}
+.forza45{
+  background: url('../img/games/forzahorizon/forza45.jpg') 50% 50%/cover no-repeat;
+}
+.jedi1{
+  background: url('../img/games/starwars/jedi1.jpg') 50% 60%/cover no-repeat;
+}
+.jedi2{
+  background: url('../img/games/starwars/jedi2.jpeg') 50% 50%/cover no-repeat;
+}
+.jedi3{
+  background: url('../img/games/starwars/jedi3.jpg') 50% 50%/cover no-repeat;
+}
+.jedi4{
+  background: url('../img/games/starwars/jedi4.jpg') 50% 50%/cover no-repeat;
+}
+.jedi5{
+  background: url('../img/games/starwars/jedi5.jpg') 50% 50%/cover no-repeat;
+}
+.sims1{
+  background: url('../img/games/sims4/sims1.jpg') 50% 60%/cover no-repeat;
+}
+.sims2{
+  background: url('../img/games/sims4/sims2.jpg') 50% 50%/cover no-repeat;
+}
+.sims3{
+  background: url('../img/games/sims4/sims3.jpg') 50% 50%/cover no-repeat;
+}
+.sims4{
+  background: url('../img/games/sims4/sims44.jpeg') 50% 50%/cover no-repeat;
+}
+.sims5{
+  background: url('../img/games/sims4/sims5.jpg') 50% 50%/cover no-repeat;
+}
+.border1{
+  background: url('../img/games/borderlands/border1.jpg') 50% 65%/cover no-repeat;
+}
+.border2{
+  background: url('../img/games/borderlands/borderlands2.jpeg') 50% 50%/cover no-repeat;
+}
+.border3{
+  background: url('../img/games/borderlands/borderlands3.jpeg') 50% 50%/cover no-repeat;
+}
+.border4{
+  background: url('../img/games/borderlands/borderlands4.jpg') 50% 50%/cover no-repeat;
+}
+.border5{
+  background: url('../img/games/borderlands/borderlands5.jpeg') 50% 50%/cover no-repeat;
+}
+.csgo1{
+  background: url('../img/games/csgo/csgo1.jpg') 50% 60%/cover no-repeat;
+}
+.csgo2{
+  background: url('../img/games/csgo/csgo2.jpg') 50% 50%/cover no-repeat;
+}
+.csgo3{
+  background: url('../img/games/csgo/csgo3.jpg') 50% 50%/cover no-repeat;
+}
+.csgo4{
+  background: url('../img/games/csgo/csgo4.jpg') 50% 50%/cover no-repeat;
+}
+.csgo5{
+  background: url('../img/games/csgo/csgo5.jpeg') 50% 50%/cover no-repeat;
+}
+.sea1{
+  background: url('../img/games/seaofthieves/sea1.jpg') 50% 60%/cover no-repeat;
+}
+.sea2{
+  background: url('../img/games/seaofthieves/sea2.jpg') 50% 50%/cover no-repeat;
+}
+.sea3{
+  background: url('../img/games/seaofthieves/sea3.jpg') 50% 50%/cover no-repeat;
+}
+.sea4{
+  background: url('../img/games/seaofthieves/sea4.jpg') 50% 50%/cover no-repeat;
+}
+.sea5{
+  background: url('../img/games/seaofthieves/sea5.jpg') 50% 50%/cover no-repeat;
+}
+.pubg1{
+  background: url('../img/games/pubg/pubg1.jpg') 50% 60%/cover no-repeat;
+}
+.pubg2{
+  background: url('../img/games/pubg/pubg2.jpeg') 50% 50%/cover no-repeat;
+}
+.pubg3{
+  background: url('../img/games/pubg/pubg3.jpeg') 50% 50%/cover no-repeat;
+}
+.pubg4{
+  background: url('../img/games/pubg/pubg4.jpg') 50% 50%/cover no-repeat;
+}
+.pubg5{
+  background: url('../img/games/pubg/pubg5.jpg') 50% 50%/cover no-repeat;
+}
+.fort1{
+  background: url('../img/games/fortnite/fort1.jpg') 50% 60%/cover no-repeat;
+}
+.fort2{
+  background: url('../img/games/fortnite/fort2.jpg') 50% 50%/cover no-repeat;
+}
+.fort3{
+  background: url('../img/games/fortnite/fort3.jpg') 50% 50%/cover no-repeat;
+}
+.fort4{
+  background: url('../img/games/fortnite/fort4.jpeg') 50% 50%/cover no-repeat;
+}
+.fort5{
+  background: url('../img/games/fortnite/fort5.jpg') 50% 50%/cover no-repeat;
+}
+.dota1{
+  background: url('../img/games/dota2/dota1.jpg') 50% 58%/cover no-repeat;
+}
+.dota2{
+  background: url('../img/games/dota2/dota22.jpg') 50% 50%/cover no-repeat;
+}
+.dota3{
+  background: url('../img/games/dota2/dota3.jpg') 50% 50%/cover no-repeat;
+}
+.dota4{
+  background: url('../img/games/dota2/dota4.jpg') 50% 50%/cover no-repeat;
+}
+.dota5{
+  background: url('../img/games/dota2/dotf5.jpg') 50% 50%/cover no-repeat;
+}
+.detroit1{
+  background: url('../img/games/detroit/detroit1.jpg') 50% 60%/cover no-repeat;
+}
+.detroit2{
+  background: url('../img/games/detroit/detroit2.jpg') 50% 50%/cover no-repeat;
+}
+.detroit3{
+  background: url('../img/games/detroit/detroit3.jpg') 50% 50%/cover no-repeat;
+}
+.detroit4{
+  background: url('../img/games/detroit/detroit4.jpeg') 50% 50%/cover no-repeat;
+}
+.detroit5{
+  background: url('../img/games/detroit/detroit5.jpg') 50% 50%/cover no-repeat;
+}
+.ghost1{
+  background: url('../img/games/ghostoftsushima/ghost1.jpg') 50% 60%/cover no-repeat;
+}
+.ghost2{
+  background: url('../img/games/ghostoftsushima/ghost2.jpg') 50% 50%/cover no-repeat;
+}
+.ghost3{
+  background: url('../img/games/ghostoftsushima/ghost3.jpeg') 50% 50%/cover no-repeat;
+}
+.ghost4{
+  background: url('../img/games/ghostoftsushima/ghost4.jpg') 50% 50%/cover no-repeat;
+}
+.ghost5{
+  background: url('../img/games/ghostoftsushima/ghost5.jpeg') 50% 50%/cover no-repeat;
+}
+.god1{
+  background: url('../img/games/godofwar/god1.jpg') 50% 58%/cover no-repeat;
+}
+.god2{
+  background: url('../img/games/godofwar/god2.jpg') 50% 50%/cover no-repeat;
+}
+.god3{
+  background: url('../img/games/godofwar/god3.jpg') 50% 50%/cover no-repeat;
+}
+.god4{
+  background: url('../img/games/godofwar/god4.jpg') 50% 50%/cover no-repeat;
+}
+.god5{
+  background: url('../img/games/godofwar/god5.jpeg') 50% 50%/cover no-repeat;
+}
+.mk1{
+  background: url('../img/games/mortalkombat/mk1.jpg') 50% 55%/cover no-repeat;
+}
+.mk2{
+  background: url('../img/games/mortalkombat/mk2.jpg') 50% 50%/cover no-repeat;
+}
+.mk3{
+  background: url('../img/games/mortalkombat/mk3.jpeg') 50% 50%/cover no-repeat;
+}
+.mk4{
+  background: url('../img/games/mortalkombat/mk4.jpg') 50% 50%/cover no-repeat;
+}
+.mk5{
+  background: url('../img/games/mortalkombat/mk5.jpeg') 50% 50%/cover no-repeat;
+}
+.last1{
+  background: url('../img/games/lastofus/last1.jpg') 50% 60%/cover no-repeat;
+}
+.last2{
+  background: url('../img/games/lastofus/last2.jpg') 50% 50%/cover no-repeat;
+}
+.last3{
+  background: url('../img/games/lastofus/last3.jpeg') 50% 50%/cover no-repeat;
+}
+.last4{
+  background: url('../img/games/lastofus/last4.jpg') 50% 50%/cover no-repeat;
+}
+.last5{
+  background: url('../img/games/lastofus/last5.jpg') 50% 50%/cover no-repeat;
+}
+.spider1{
+  background: url('../img/games/spiderman/spider.jpg') 50% 60%/cover no-repeat;
+}
+.spider2{
+  background: url('../img/intro/intro6.jpg') 50% 50%/cover no-repeat;
+}
+.spider3{
+  background: url('../img/games/spiderman/spider3.jpeg') 50% 50%/cover no-repeat;
+}
+.spider4{
+  background: url('../img/games/spiderman/spider4.jpg') 50% 50%/cover no-repeat;
+}
+.spider5{
+  background: url('../img/games/spiderman/spider5.jpg') 50% 50%/cover no-repeat;
+}
+.hearth1{
+  background: url('../img/games/hearthstone/hearth1.jpg') 50% 60%/cover no-repeat;
+}
+.hearth2{
+  background: url('../img/games/hearthstone/hearth2.jpeg') 50% 50%/cover no-repeat;
+}
+.hearth3{
+  background: url('../img/games/hearthstone/hearth3.jpeg') 50% 50%/cover no-repeat;
+}
+.hearth4{
+  background: url('../img/games/hearthstone/hearth4.png') 50% 50%/cover no-repeat;
+}
+.hearth5{
+  background: url('../img/games/hearthstone/hearth5.jpeg') 50% 50%/cover no-repeat;
+}
+.genshin1{
+  background: url('../img/games/genshin/genshin1.jpg') 50% 60%/cover no-repeat;
+}
+.genshin2{
+  background: url('../img/games/genshin/genshin2.jpg') 50% 50%/cover no-repeat;
+}
+.genshin3{
+  background: url('../img/games/genshin/genshin3.jpg') 50% 50%/cover no-repeat;
+}
+.genshin4{
+  background: url('../img/games/genshin/genshin4.jpg') 50% 50%/cover no-repeat;
+}
+.genshin5{
+  background: url('../img/games/genshin/genshin5.jpg') 50% 50%/cover no-repeat;
+}
+.fire1{
+  background: url('../img/games/freefire/frefire1.jpg') 50% 55%/cover no-repeat;
+}
+.fire2{
+  background: url('../img/games/freefire/frefire2.jpg') 50% 50%/cover no-repeat;
+}
+.fire3{
+  background: url('../img/games/freefire/frefire3.jpg') 50% 50%/cover no-repeat;
+}
+.fire4{
+  background: url('../img/games/freefire/frefire4.jpg') 50% 50%/cover no-repeat;
+}
+.fire5{
+  background: url('../img/games/freefire/frefire5.jpg') 50% 50%/cover no-repeat;
+}
+.clash1{
+  background: url('../img/games/clashroyal/clash1.jpg') 50% 65%/cover no-repeat;
+}
+.clash2{
+  background: url('../img/games/clashroyal/clash2.jpg') 50% 50%/cover no-repeat;
+}
+.clash3{
+  background: url('../img/games/clashroyal/clash3.jpg') 50% 50%/cover no-repeat;
+}
+.clash4{
+  background: url('../img/games/clashroyal/clash4.jpg') 50% 50%/cover no-repeat;
+}
+.clash5{
+  background: url('../img/games/clashroyal/clash5.jpeg') 50% 50%/cover no-repeat;
+}
+.among1{
+  background: url('../img/games/amongus/among1.jpg') 50% 60%/cover no-repeat;
+}
+.among2{
+  background: url('../img/games/amongus/amongus2.jpg') 50% 50%/cover no-repeat;
+}
+.among3{
+  background: url('../img/games/amongus/amongus3.jpg') 50% 50%/cover no-repeat;
+}
+.among4{
+  background: url('../img/games/amongus/amongus4.jpg') 50% 50%/cover no-repeat;
+}
+.among5{
+  background: url('../img/games/amongus/amongus5.jpg') 50% 50%/cover no-repeat;
+}
+.brawl1{
+  background: url('../img/games/brawlstars/brawl1.jpg') 50% 50%/cover no-repeat;
+}
+.brawl2{
+  background: url('../img/games/brawlstars/brawl2.jpg') 50% 50%/cover no-repeat;
+}
+.brawl3{
+  background: url('../img/games/brawlstars/brawl3.jpg') 50% 50%/cover no-repeat;
+}
+.brawl4{
+  background: url('../img/games/brawlstars/brawl4.jpg') 50% 50%/cover no-repeat;
+}
+.brawl5{
+  background: url('../img/games/brawlstars/brawl5.jpeg') 50% 50%/cover no-repeat;
+}
+.new{
+  background: url('../img/news/new.jpg') 50% 20%/cover no-repeat;
+}
+.cyberpunk__n{
+  background: url('../img/news/mario.jpg') 50% 50%/cover no-repeat;
+}
+.ghost__n{
+  background: url('../img/news/class.jpg') 50% 50%/cover no-repeat;
+}
+.spider__n{
+  background: url('../img/news/spider.jpg') 50% 50%/cover no-repeat;
+}
+.watch__n{
+  background: url('../img/intro/intro9.jpg') 50% 50%/cover no-repeat;
+}
+.last__n{
+  background: url('../img/news/last.jpg') 50% 50%/cover no-repeat;
+
+}
+.detroit__n{
+  background: url('../img/news/detroit.jpg') 50% 50%/cover no-repeat;
+
+}
+.god__n{
+  background: url('../img/games/godofwar/god2.jpg') 50% 50%/cover no-repeat;
+
+}
+.border__n{
+  background: url('../img/news/border.jpg') 50% 50%/cover no-repeat;
+
+}
+
+
+
+#r1:checked ~ .s1{
+  margin-left: 0;
+}
+#r2:checked ~ .s1{
+  margin-left: -20%;
+}
+#r3:checked ~ .s1{
+  margin-left: -40%;
+}
+#r4:checked ~ .s1{
+  margin-left: -60%;
+}
+#r5:checked ~ .s1{
+  margin-left: -80%;
+}
+
+@media(max-width: 690px){
+  .slide_new{
+    height: 400px;
+    margin: 0 5%;
+  }
+  .bar{
+    width: 50px;
+  }
+}

@@ -1,0 +1,225 @@
+.footer{
+}
+
+.footer__body{
+    width: 100%;
+    min-height: 245px;
+    background-color: #333;
+}
+
+.footer__items{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0 15px 0;
+}
+
+/* contact */
+.footer__contact{
+    margin: 12px 0 0 0;
+}
+.footer__link a{ 
+    position: relative;
+    padding: 0 0 0 30px;
+    font-family: 'Gilroy';
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    transition: color .1s linear;
+}
+.footer__link a::before{
+    content: '';
+    background: url('../img/icons/social/tg.png') 0 0/100% no-repeat;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: -4px;
+    left: 0;
+}
+.footer__info_pos a{
+    font-family: 'Gilroy';
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    transition: color .1s linear;
+}
+.footer__link a:hover{
+    color: #fef200;
+}
+.footer__info_pos a:hover{
+    color: #fef200;
+}
+.footer__link a:active{
+    color: #e3d700;
+}
+.footer__info_pos a:active{
+    color: #e3d700;
+}
+
+/* logo */
+.footer__logo{
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+}
+.footer__logo_img{
+    width: 200px;
+    height: 26px;
+    background: url('../img/logo/game-boy_g.png') 0 0/100% no-repeat;
+}
+.footer__up{
+    margin: 0 0 0 15px;
+    width: 35px;
+    height: 35px;
+    border: solid 4px #fef200;
+    border-radius: 4px;
+    transition: all .1s linear;
+    position: relative;
+}
+.footer__up::before, .footer__up::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 39%;
+    height: 2px;
+    background-color: #fef200;
+    transition: all .2s linear;
+}
+.footer__up:hover::before, .footer__up:hover::after{
+    background-color: #fff;
+}
+.footer__up::before{
+    transform: rotate(-45deg);
+    left: 5px;
+}
+.footer__up::after{
+    transform: rotate(45deg);
+    right: 5px;
+}
+.footer__up:hover{
+    border: solid 4px #e3d700;
+}
+
+
+/* cards */
+.footer__news{
+    display: grid;
+    grid-template-columns: 300px 300px;
+}
+.footer__cards{
+	/* display: flex;
+	justify-content: space-between; */
+}
+/* .two{
+    margin: 10px 0 0 0;
+} */
+.footer__info{
+    margin: 0 0 0 40px;
+    color: #fff;
+    font-size: 14px;
+}
+.footer__info_pos{
+    position: relative;
+	padding: 0 0 0 110px;
+}
+.footer__info_pos::before{
+    content: '';
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100px;
+    height: 50px;
+    background-color: yellow;
+}
+.card1::before{
+	content: '';
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100px;
+    height: 50px;
+    background: url('../img/news/border.jpg') 0 0/cover no-repeat;
+}
+.card2::before{
+	content: '';
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100px;
+    height: 50px;
+    background: url('../img/news/spider.jpg') 0 0/cover no-repeat;
+}
+.card3::before{
+	content: '';
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100px;
+    height: 50px;
+    background: url('../img/news/last.jpg') 0 0/cover no-repeat;
+}
+.card4::before{
+	content: '';
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100px;
+    height: 50px;
+    background: url('../img/intro/intro9.jpg') 0 0/cover no-repeat;
+}
+.footer__info_date{
+    margin: 10px 0 10px 0;
+    color: #a8a8a8;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* edition */
+.footer__ediition{
+    position: relative;
+}
+.footer__ediition p{
+    position: absolute;
+    top: 10px;
+    left: 45%;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+@media(max-width:870px){
+    .footer__logo{
+        justify-content: center;
+    }
+    .footer__up{
+
+    }
+    .footer__link{
+        margin: 20px 0 0 40px;
+    }
+
+    .footer__news{
+        margin: 0;
+    }
+    .footer__items{
+        display: block;
+    }
+    .footer__cards{
+        margin: 30px 0 0 0;
+    }
+    .footer__ediition{
+        padding: 0 0 30px 0;
+    }
+    .footer__ediition p{
+        top: 0px;
+    } 
+}
+@media(max-width:635px){
+    .footer__up{
+    }
+    .footer__news{
+        display: inline;
+    }
+    .footer__ediition p{
+        left: 40px;
+    }
+}

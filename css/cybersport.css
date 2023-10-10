@@ -1,0 +1,116 @@
+/* cybersport */
+.cybersport p{
+    margin: 10px 0 0 0;
+}
+.crew__info h3{
+    font-size: 20px;
+    color: #333;
+    font-weight: 600;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/* crew card */
+.crew__cards{
+    margin: 40px 0 0 0;  
+}
+.crew__cards_list{
+    position: relative;
+    padding: 20px 0 0 0;
+}
+.crew__cards_list::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #7a7a7a;
+}
+.crew__cards_list ul{
+    display: flex;
+}
+.crew__cards_list li{
+    /* margin: 0 20px 0 0; */
+    flex: 1 1 auto;
+    margin: 0 10px 0 0;
+}
+.crew__cards_item{
+    position: relative;
+    min-width: 200px;
+    min-height: 250px;
+    background-color: #ccc;
+}
+.crew__cards_img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+}
+.ts{
+    background: url('../img/cybersport/Team_Spirit.png') 50% 50%/60% no-repeat;
+}
+.navi{
+    background: url('../img/cybersport/navi.png') 50% 50%/60% no-repeat;
+}
+.vp{
+    background: url('../img/cybersport/vp.png') 50% 50%/60% no-repeat;
+}
+.og{
+    background: url('../img/cybersport/og.png') 50% 50%/50% no-repeat;
+}
+.eg{
+    background: url('../img/cybersport/eg.png') 50% 50%/40% no-repeat;
+}
+.crew__cards_img::after{
+    position: absolute;
+    content: '';
+    bottom: -10px;
+    left: 25%;
+    width: 50%;
+    height: 3px;
+    background-color: #333;
+}
+.crew__cards_info{
+    display: flex;
+    justify-content: space-between;
+    padding: 100% 10px 10px 10px;
+}
+.crew__cards_title p{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+.crew__cards_games{
+    position: relative;
+}
+.crew__cards_game{
+    width: 35px;
+    height: 35px;
+}
+
+@media(max-width: 1152px){
+    .crew__cards_list ul{
+        display: block;
+    }
+    .crew__cards_list li{
+        margin: 20px 0;
+    }
+    .crew__cards_title p{
+        font-size: 50px;
+    }
+    .crew__cards_game{
+        width: 100px;
+        height: 100px;
+    }
+}
+@media(max-width: 526px){
+    .crew__cards_title p{
+        font-size: 30px;
+        margin: 15% 0 0 0;
+    }
+    .OG{
+        margin: 5% 0 0 0;
+    }
+}

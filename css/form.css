@@ -1,0 +1,125 @@
+@import url('./style.css');
+
+body{
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    height: 100vh;
+    background: url("../img/intro/intro9.jpg") center no-repeat;
+    background-size: cover;
+    color: #333;
+    font-weight: 500;
+    animation: change 20s infinite ease-in-out;
+}
+
+
+.login__card_log > input, .login__card_pass > input {
+    padding: 5px;
+    border: 2px solid #dbd000;
+    background-color: #333;
+    color: #fff;
+}
+
+
+.check_remember{
+    text-align: center;
+    vertical-align: calc(-5%);
+}
+.login__card__actions > input[type="checkbox"]::before{
+    margin-right: 12px;
+}
+
+
+.login__card {
+    width: 400px;
+    height: 400px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+.login__card > h1{
+    text-align: center;
+    font-weight: 600;
+    font-size: 34px;
+    margin-bottom: 14px;
+}
+
+p {
+    font-size: 17px;
+}
+
+form > p{
+    text-align: center;
+}
+
+
+
+a {
+    color: #333; 
+}
+a:hover{
+    color: #c8be00;
+    transition: color .2s linear;
+}
+
+.login__card_log, .login__card_pass{
+    margin-bottom: 10px;
+} 
+
+.login__card_log > input, .login__card_pass > input{
+    width: 100%;
+    height: 35px;
+    font-size: 16px;
+} 
+.login__card_log > p, .login__card_pass > p{
+    margin-bottom: 2px;
+} 
+
+.login__card_log {
+}
+.login__card_pass {
+    margin-top: 20px;
+}
+
+.login__card__actions {
+    display: flex;
+
+    justify-content: space-between;
+    margin: 30px 0 14px 0;
+}
+
+button{
+    width: 100%;
+    height: 45px;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: 600;
+    font-size: 18px;
+    background-color: #dbd000;
+}
+
+button:hover{
+    background-color: #c8be00;
+    transition: background-color .2s linear;
+}
+
+@keyframes change {
+    0% {
+        background-image: url('../img/intro/intro9.jpg');
+    }
+    20% {
+        background-image: url('../img/intro/intro10.jpg');
+    }
+    40% {
+        background-image: url('../img/intro/intro4.jpg');
+    }
+    60% {
+        background-image: url('../img/intro/intro7.jpg');
+    }
+    80% {
+        background-image: url('../img/intro/intro6.jpg');
+    }
+    100% {
+        background-image: url('../img/intro/intro9.jpg');
+    }
+} 

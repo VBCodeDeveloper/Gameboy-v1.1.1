@@ -21,6 +21,12 @@ body{
     color: #fff;
 }
 
+.login__card_log > input:invalid {
+    background-color: #a42215;
+    transition: background-color .1s linear;
+}
+
+
 
 .check_remember{
     text-align: center;

@@ -61,8 +61,10 @@
 .main__intro_button button{
     width: 350px;
     height: 80px;
-    background-color: #dbd000;
+    background-color: inherit;
+    border: 3px #dbd000 solid;
     color: #fff;
+    text-align: center;
     font-size: 30px;
     font-family: 'Gilroy';
     font-weight: 600;

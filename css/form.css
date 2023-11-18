@@ -94,7 +94,7 @@ a:hover{
     margin: 30px 0 14px 0;
 }
 
-button{
+input[type = sumbit]{
     width: 100%;
     height: 45px;
     margin-bottom: 10px;
@@ -104,7 +104,7 @@ button{
     background-color: #dbd000;
 }
 
-button:hover{
+input[type = submit]:hover{
     background-color: #c8be00;
     transition: background-color .2s linear;
 }

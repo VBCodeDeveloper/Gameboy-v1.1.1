@@ -95,6 +95,7 @@ a:hover{
 }
 
 input[type = sumbit]{
+    display: inline-block;
     width: 100%;
     height: 45px;
     margin-bottom: 10px;

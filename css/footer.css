@@ -66,7 +66,7 @@
     height: 26px;
     background: url('../img/logo/game-boy_g.png') 0 0/100% no-repeat;
 }
-.footer__up{
+.footer__up, .footer__theme{
     margin: 0 0 0 15px;
     width: 35px;
     height: 35px;
@@ -95,8 +95,18 @@
     transform: rotate(45deg);
     right: 5px;
 }
-.footer__up:hover{
+.footer__up:hover, .footer__theme:hover{
     border: solid 4px #e3d700;
+}
+
+.footer__theme{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+}
+.footer__theme svg {
+    cursor: pointer;
 }
 
 

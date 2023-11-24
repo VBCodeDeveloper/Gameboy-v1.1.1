@@ -1,0 +1,19 @@
+body {
+    background-color: #fff;
+    transition: all .1s linear;
+}
+
+/* main */
+.main__info{
+    background-color: #ccc;
+}
+.main__info p{
+    color: #2a2a2a;
+}
+
+.change-theme[data-theme='dark'] {
+    display: block;
+}
+.change-theme[data-theme='light'] {
+    display: none;
+}
